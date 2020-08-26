@@ -15,6 +15,7 @@ def waiting_game():
     elapsed = time.perf_counter() - start
     
     print('\nElapsed time: {0:.3f} seconds'.format(elapsed))
+    #depend on the calculated time print appropriate message
     if elapsed == target:
         print('(Unbelievable! Perfect timing!)')
     elif elapsed < target:
