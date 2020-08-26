@@ -3,7 +3,7 @@ import time
 import winsound as ws
 
 def set_alarm(alarm_time, wav_file, message):
-	""" a funtion to play a sound on the specific time with a message appeared"""
+	""" a funtion to play a sound on the specific time with a message appeared."""
     s = sched.scheduler(time.time, time.sleep)
     s.enterabs(alarm_time, 1, print, argument=(message,))
     s.enterabs(alarm_time, 1, ws.PlaySound, argument=(wav_file, ws.SND_FILENAME))

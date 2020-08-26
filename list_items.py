@@ -1,5 +1,5 @@
 def list_item (list, value):
-	"""a function to find all indices of a given value in a list"""
+	"""a function to find all indices of a given value in a list."""
 	indices =[]
 	# Iterate through list to 
 	for i in range(len(liste)):
